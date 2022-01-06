@@ -1,0 +1,301 @@
+{
+	"info": {
+		"_postman_id": "1ac20e53-656d-4d5b-9073-6a19c2a67e10",
+		"name": "elevania-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/getProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"getProduct"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "vary",
+							"value": "accept-encoding"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Jan 2022 17:45:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"status\": 200,\n    \"timestamp\": 1641404725700,\n    \"message\": \"Get all Product success\",\n    \"count\": 4,\n    \"data\": [\n        {\n            \"id\": \"25\",\n            \"created_date\": \"2019-08-31T11:18:26.261Z\",\n            \"updated_date\": null,\n            \"prdNo\": \"28022796\",\n            \"prdnm\": \"Pakaian Anjing Dan Kucing HOOPET warna SILVER\",\n            \"SKU\": \"HPET03\",\n            \"prdImg01\": \"http://image.elevenia.co.id/g/0/2/2/7/9/6/28022796_B_V1.jpg\",\n            \"htmlDetail\": \"<p>BAJU BRAND HOOPET UNTUK ANJING DAN KUCING</p><p><br>GAYA YG BERBEDA<br>BAHAN YG LEMBUT<br>* Hangat Di Musim dingi</p><p>PERHATIAN!<br>Pada saat memesan harap buat catatan UKURAN / SIZE yg di pesan,<br>Apabila tidak mencatumkan UKURAN/SIZE Maka kami kirim ukuran secara acak dengan<br>stok yg tersedia</p><p>SIZE Leher(cm/inch) Dada(cm/inch) Panjang(cm/inch)</p><p>BESAR =M 28/11inc 33-38/13inc-15.8inc 28/11inc</p><p>MEDIUM = S 25/9.8inc 28-33/11inc-13.8inc 23/9inc</p><p>KECIL =XS 22/8.7inc 23-28/9inc-11.8inc 18/7.1inc</p>\",\n            \"Selprc\": \"150000\",\n            \"is_active\": \"Y\"\n        },\n        {\n            \"id\": \"22\",\n            \"created_date\": \"2019-08-31T11:14:40.241Z\",\n            \"updated_date\": null,\n            \"prdNo\": \"28022841\",\n            \"prdnm\": \"TORU Motomo Aluminium Case for iPhone 6 Plus - Dark Blueedit\",\n            \"SKU\": \"TORU01 edit\",\n            \"prdImg01\": \"http://image.elevenia.co.id/g/0/2/2/8/4/1/28022841_B.jpeg\",\n            \"htmlDetail\": \"<p>TORU Motomo Aluminium Case terbuat dari bahan material aluminium yang kokoh, sehingga memberikan perlindungan ekstra untuk iPhone 6+ Anda dari goresan dan benturan. Dengan design yang ramping dan ringan, Anda tetap mendapat akses ke setiap tombol dengan mudah.</p><p>Features<br>High Quality Material<br>TORU Motomo Aluminium Case terbuat dari bahan material aluminium yang kokoh, sehingga memberikan perlindungan ekstra untuk iPhone 6+ Anda dari goresan dan benturan.</p><p>Lightweight Design<br>Dengan design yang ramping dan ringan, Anda tetap mendapat akses ke setiap tombol dengan mudah.</p><p>Compatibility<br>TORU Motomo Aluminium Case cocok dan pas untuk iPhone 6+ Anda.</p>\",\n            \"Selprc\": \"200000\",\n            \"is_active\": \"Y\"\n        },\n        {\n            \"id\": \"34\",\n            \"created_date\": \"2019-09-01T13:18:10.592Z\",\n            \"updated_date\": null,\n            \"prdNo\": \"25994432\",\n            \"prdnm\": \"TORUaaaaa Motomo Aluminium Case for iPhone 6s Plusss test\",\n            \"SKU\": \"MT01aaaaa\",\n            \"prdImg01\": \"http://image.elevenia.co.id/g/9/9/4/4/3/2/25994432_B_V17.jpeg\",\n            \"htmlDetail\": \"<p>&nbsp;&nbsp;</p>\\n<p>Case TORU Motomo Aluminium Case terbuat dari bahan material aluminium yang kokoh, sehingga memberikan perlindungan ekstra untuk iPhone 6+ Anda dari goresan dan benturan. Dengan design yang ramping dan ringan, Anda tetap mendapat akses ke setiap tombol dengan mudah.</p>\\n<p>&nbsp;&nbsp;</p>\\n<p>High Quality Material</p>\\n<p>TORU Motomo Aluminium Case terbuat dari &nbsp;&nbsp;bahan material aluminium yang kokoh, sehingga memberikan perlindungan ekstra &nbsp;&nbsp;untuk iPhone 6+ Anda dari goresan dan benturan.</p>\\n<p>&nbsp;</p>\\n<p>Lightweight Design</p>\\n<p>Dengan design yang ramping dan ringan, Anda &nbsp;&nbsp;tetap mendapat akses ke setiap tombol dengan mudah.</p>\\n<p>&nbsp;</p>\\n<p>Compatibility</p>\\n<p>TORU Motomo Aluminium Case cocok dan pas &nbsp;&nbsp;untuk iPhone 6 plus atau 6s plus Anda.</p>\",\n            \"Selprc\": \"149000\",\n            \"is_active\": \"Y\"\n        },\n        {\n            \"id\": \"21\",\n            \"created_date\": \"2019-08-31T11:14:29.175Z\",\n            \"updated_date\": \"2022-01-05T17:11:18.827Z\",\n            \"prdNo\": \"25982867\",\n            \"prdnm\": \"Case Spigen Neo Hybrid Iphone 6 Plus - Red\",\n            \"SKU\": \"SPGN01\",\n            \"prdImg01\": \"http://image.elevenia.co.id/g/9/8/2/8/6/7/25982867_B_V3.jpg\",\n            \"htmlDetail\": \"<p>SPG Neo Hybrid</p>\\n<p>Terbuat dari bahan berkualitas</p>\\n<p>tahan benturan dengan design modern</p>\\n<p>terdapat pilihan banyak warna</p>\\n<p>untuk Iphone 6 Plus dan Iphone 6s Plus</p>\",\n            \"Selprc\": \"200000\",\n            \"is_active\": \"Y\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetProductFromElevania",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/getProductFromElevenia/26682888",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"getProductFromElevenia",
+								"26682888"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "vary",
+							"value": "accept-encoding"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Jan 2022 17:47:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"status\": 201,\n    \"timestamp\": 1641404838877,\n    \"message\": \"Product Elevenia Baseus Cable 1 Meter Micro USB Berhasil Dibuat\",\n    \"data\": {\n        \"created_date\": \"2022-01-05T17:47:18.866Z\",\n        \"prdnm\": \"Baseus Cable 1 Meter Micro USB\",\n        \"prdNo\": \"26682888\",\n        \"SKU\": \"BS010\",\n        \"prdImg01\": \"http://image.elevenia.co.id/g/6/8/2/8/8/8/26682888_B_V2.jpeg\",\n        \"htmlDetail\": \"<p>Baseus White 1 Meter Micro USB 5 Pin to USB 2.0 High Speed Data Sync Charge<br>Cable for Samsung HTC Nokia Sony LG Xiaomi</p><p>100% new top quality high speed Micro USB 5pin to USB 2.0 data sync charge cable<br>High speed more reliable data transfer and charging, save time save money<br>Round cable, durable and strong, 1 meter length<br>2-in-1 function allowing charging and data transfer at the same time<br>Easily charges your device by simple connecting to USB port of your PC or wall<br>plug (not included)<br>Update music / data and more to your smart phone devices with micro usb port<br>through this data cable<br>Wide compatibility, suitable for most Android mobile phones, such as Samsung,<br>HTC, LG, Nokia, Sony, etc.<br>Cable Length: 1 Meter</p>\",\n        \"Selprc\": \"5000\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"prdnm\":\"Barang A\",\n\t\"SKU\":\"123HEHE\",\n\t\"prdImg01\":\"Gambar\",\n\t\"htmlDetail\":\"Barang A memang Oke\",\n\t\"Selprc\":10000,\n\t\"is_active\":\"N\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/updateProduct/37",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"updateProduct",
+						"37"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UpdateProduct",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"prdnm\":\"tes edit\",\n\t\"SKU\":\"SKU\",\n\t\"prdImg01\":\"IMAGE\",\n\t\"htmlDetail\":\"DETAIL\",\n\t\"Selprc\":100009,\n\t\"is_active\":\"N\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/updateProduct/37",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"updateProduct",
+								"37"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "content-length",
+							"value": "112"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Jan 2022 17:53:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"status\": 200,\n    \"timestamp\": 1641405235921,\n    \"message\": \"Updated Product success\",\n    \"count\": 1,\n    \"data\": [\n        1\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetProductDetail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "GetProductDetail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/getProductDetail/22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"getProductDetail",
+								"22"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "vary",
+							"value": "accept-encoding"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Jan 2022 17:55:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"status\": 200,\n    \"timestamp\": 1641405331239,\n    \"message\": \"Get Product by id success\",\n    \"data\": {\n        \"id\": \"22\",\n        \"created_date\": \"2019-08-31T11:14:40.241Z\",\n        \"updated_date\": null,\n        \"prdNo\": \"28022841\",\n        \"prdnm\": \"TORU Motomo Aluminium Case for iPhone 6 Plus - Dark Blueedit\",\n        \"SKU\": \"TORU01 edit\",\n        \"prdImg01\": \"http://image.elevenia.co.id/g/0/2/2/8/4/1/28022841_B.jpeg\",\n        \"htmlDetail\": \"<p>TORU Motomo Aluminium Case terbuat dari bahan material aluminium yang kokoh, sehingga memberikan perlindungan ekstra untuk iPhone 6+ Anda dari goresan dan benturan. Dengan design yang ramping dan ringan, Anda tetap mendapat akses ke setiap tombol dengan mudah.</p><p>Features<br>High Quality Material<br>TORU Motomo Aluminium Case terbuat dari bahan material aluminium yang kokoh, sehingga memberikan perlindungan ekstra untuk iPhone 6+ Anda dari goresan dan benturan.</p><p>Lightweight Design<br>Dengan design yang ramping dan ringan, Anda tetap mendapat akses ke setiap tombol dengan mudah.</p><p>Compatibility<br>TORU Motomo Aluminium Case cocok dan pas untuk iPhone 6+ Anda.</p>\",\n        \"Selprc\": \"200000\",\n        \"is_active\": \"Y\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
