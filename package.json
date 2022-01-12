@@ -4,9 +4,10 @@
   "description": "technical test jubelio fullstack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \\\"Error: no src/test specified\\\" && exit 1",
     "build": "babel src -d dist",
-    "start": "npm run build && node dist/server.js"
+    "start": "npm run build && node dist/server.js",
+    "test": "lab -v dist/test/api.test.js"
   },
   "keywords": [
     "fullstack"
@@ -32,6 +33,8 @@
     "@babel/core": "^7.16.7",
     "@babel/node": "^7.16.7",
     "@babel/preset-env": "^7.16.7",
+    "@hapi/code": "^8.0.5",
+    "@hapi/lab": "^24.5.0",
     "nodemon": "^2.0.15"
   }
 }

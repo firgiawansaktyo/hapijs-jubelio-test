@@ -18,6 +18,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 var Elevenia_routes = function Elevenia_routes(server) {
   _RoutesConfig["default"].get(server, '/getProductFromElevenia/{prdNo}', _Product.getProductFromElevenia, _EleveniaProduct.getProductFromEleveniaValidation);
 
+  _RoutesConfig["default"].get(server, '/getAllProductFromElevenia/{pageNumber}', _Product.getAllProductFromElevenia, _EleveniaProduct.getProductFromEleveniaValidation);
+
   return _RoutesConfig["default"];
 };
 

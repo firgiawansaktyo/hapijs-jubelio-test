@@ -56,10 +56,8 @@ var getProduct = /*#__PURE__*/function () {
           case 0:
             _context.prev = 0;
             _context.next = 3;
-            return _Product.Product.findAll({
-              where: {
-                is_active: 'Y'
-              }
+            return _Product.Product.sequelize.query("SELECT * FROM vnd_product WHERE is_active='Y' ", {
+              type: _Product.Product.sequelize.QueryTypes.SELECT
             });
 
           case 3:
@@ -95,11 +93,11 @@ var getProductDetail = /*#__PURE__*/function () {
           case 0:
             _context2.prev = 0;
             _context2.next = 3;
-            return _Product.Product.findOne({
-              where: {
-                id: request.params.id,
-                is_active: 'Y'
-              }
+            return _Product.Product.sequelize.query("SELECT * FROM vnd_product WHERE id=:id AND is_active='Y' ", {
+              replacements: {
+                id: request.params.id
+              },
+              type: _Product.Product.sequelize.QueryTypes.SELECT
             });
 
           case 3:
@@ -128,7 +126,7 @@ exports.getProductDetail = getProductDetail;
 
 var updateProduct = /*#__PURE__*/function () {
   var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3(request, h) {
-    var payload, data;
+    var payload, query, data;
     return regeneratorRuntime.wrap(function _callee3$(_context3) {
       while (1) {
         switch (_context3.prev = _context3.next) {
@@ -138,28 +136,37 @@ var updateProduct = /*#__PURE__*/function () {
               updated_date: new Date()
             });
             _context3.prev = 1;
-            _context3.next = 4;
-            return _Product.Product.update(payload, {
-              where: {
-                id: request.params.id
-              }
+            query = "UPDATE vnd_product SET \"prdnm\"= :prdnm , \"SKU\"= :SKU, \"prdImg01\"= :prdImg01, \"htmlDetail\"= :htmlDetail, \"Selprc\"= :Selprc, \"is_active\"= :is_active, \"updated_date\"= :updated_date  WHERE id=:id";
+            _context3.next = 5;
+            return _Product.Product.sequelize.query(query, {
+              replacements: {
+                id: request.params.id,
+                prdnm: payload.prdnm,
+                SKU: payload.SKU,
+                prdImg01: payload.prdImg01,
+                htmlDetail: payload.htmlDetail,
+                Selprc: payload.Selprc,
+                is_active: payload.is_active,
+                updated_date: payload.updated_date
+              },
+              type: _Product.Product.sequelize.QueryTypes.UPDATE
             });
 
-          case 4:
+          case 5:
             data = _context3.sent;
             return _context3.abrupt("return", _ApiResponse["default"].ok(200, 'Updated Product success', data));
 
-          case 8:
-            _context3.prev = 8;
+          case 9:
+            _context3.prev = 9;
             _context3.t0 = _context3["catch"](1);
             return _context3.abrupt("return", _ApiResponse["default"].internalServerError(_context3.t0, 'Internal server error', _context3.t0.message));
 
-          case 11:
+          case 12:
           case "end":
             return _context3.stop();
         }
       }
-    }, _callee3, null, [[1, 8]]);
+    }, _callee3, null, [[1, 9]]);
   }));
 
   return function updateProduct(_x5, _x6) {
